@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Live Football Score",
+    "version": "1.0",
+    "description": "Shows live football scores.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "logo.png"
+      }
+    },
+    "icons":{
+        "128":"logo.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+      },
+      "permissions": [
+        "activeTab"
+      ],
+      "host_permissions": [
+        "https://api.football-data.org/"
+      ]
+  }
+  
